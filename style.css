@@ -25,15 +25,13 @@ body {
     #c6ffdd
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-#contenedor {
+.container {
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
 }
-#caja1,
-#caja2,
-#caja3 {
+.box {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
@@ -44,20 +42,19 @@ body {
   border-radius: 0.9rem;
   box-shadow: 6px 10px 15px 1px rgb(8, 0, 0, 0.507);
 }
-#caja1 {
+.box:first-child {
   background-color: red;
   color: rgb(8, 8, 8);
 }
-#caja2 {
+.box:nth-child(2) {
   background-color: yellow;
   color: rgb(8, 8, 8);
 }
-#caja3 {
+.box:last-child {
   background-color: green;
   color: rgb(8, 8, 8);
 }
-
-#titulo {
+h1 {
   width: 300px;
   height: 100px;
   font-family: Courier, monospace;
