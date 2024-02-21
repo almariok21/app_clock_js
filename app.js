@@ -1,13 +1,13 @@
 window.addEventListener('load', () => {
-  let horaHTML = document.getElementById('hora')
-  let minutoHTML = document.getElementById('minuto')
-  let segundoHTML = document.getElementById('segundos')
+  const horaHTML = document.querySelector('#horas')
+  const minutoHTML = document.querySelector('#minutos')
+  const segundoHTML = document.querySelector('#segundos')
 
   const monstrarHora = () => {
-    let fecha = new Date()
-    let hora = fecha.getHours()
-    let minuto = fecha.getMinutes()
-    let segundo = fecha.getSeconds()
+    const fecha = new Date()
+    const hora = fecha.getHours()
+    const minuto = fecha.getMinutes()
+    const segundo = fecha.getSeconds()
 
     // Rellena la cadena repetida
     horaHTML.textContent = String(hora).padStart(2, '0')
